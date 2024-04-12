@@ -1,7 +1,12 @@
 #include <iostream>
+#include <cstdlib>
 using namespace std;
 
-int numero(int numero) {
+void mostrarmensaje(){
+	system("cls");
+	cout<<"Que desea hacer?"<<endl;
+
+	int numero;
 	int resultado;
 	int num;
 	
@@ -22,37 +27,31 @@ int numero(int numero) {
 		cout << "Ingrese palabra";
 		cin>>palabra;
 		cout<<"Su paralbra es:"<<palabra;
-		}
+	}
 	else{//letra
 		char letra;
 		cout << "Ingrese letra:";
 		cin>>letra;
 		cout<<"Su letra es:"<<letra;
 	}
+}
+
 	
-	return resultado;
-}
 	
-void mostrarmensaje(){
-	cout<<"Que desea hacer?";
-}
-
-
-int main(int argc, char *argv[]) {
-	int num1;
-	int control=1;
-	do{
-		mostrarmensaje();
-		cin>>num1;
-		numero(num1);
-		
-		cout << endl << "Desea continuar? 1. Si, 2. No";
-		cin >> control;
-		if (control != 1 && control != 2) {
-			control == 1;
-			cout << "No siguio instrucciones";
-		}
-	}while(control == 1);
-	return 0;
-}
-
+	int main(int argc, char *argv[]) {
+		int num1;
+		int control=1;
+		do{
+			mostrarmensaje();
+			
+			cout << endl << "Desea continuar? 1. Si, 2. No";
+			cin >> control;
+				if (control != 1 && control != 2) {
+				control == 1;
+				cout << "No siguio instrucciones";
+			}
+		}while(control == 1);
+		return 0;
+	}
+	
+	
