@@ -48,8 +48,8 @@ int main(int argc, char *argv[]) {
 			cin>>ad;
 			
 			if(angulo <= 180){
-			   angulo = 180-(opuesto+ad);
-			cout<<"El angulo es:"<<angulo <<endl;
+				angulo = 180-(opuesto+ad);
+				cout<<"El angulo es:"<<angulo <<endl;
 			}
 			break;
 			
@@ -58,7 +58,7 @@ int main(int argc, char *argv[]) {
 			cout<<"Calcular el factorial de un número"<<endl;
 			cout<<"Ingrese un número para averiguar su factorial:";
 			cin>>numero;
-		
+			
 			for(int a=numero; a>0; a--){
 				fac=fac*a;
 				cout << "el valor ahora es" <<fac<<endl;
@@ -90,7 +90,7 @@ int main(int argc, char *argv[]) {
 			cout<<"Salir del programa";
 			break;
 		}
-		}
+	}
 	return 0;
 }
 
