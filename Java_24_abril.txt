@@ -1,0 +1,38 @@
+PRIMER EJERCICIO DE JAVA
+
+public class MyProgram extends ConsoleProgram
+{
+    public void run()
+    {
+        Integer numero = 8;
+        Integer n = 10;
+        
+        String texto = "La palabra o el numero es:";
+        String letras = "Hola";
+        String nume = "5.66";
+        
+        Double num = 12.60;
+        
+        Boolean palabra = true;
+        
+        System.out.println(texto + letras);
+        System.out.println(numero + n);
+        
+        //Convertir de Integer a Double
+        Double numero_num = Double.valueOf(numero);
+        System.out.println(numero_num);
+        
+        //String a Double
+        Double numeDouble = Double.valueOf(nume);
+        System.out.println(numeDouble);
+        
+        //Double a string
+        String num_decimal = num.toString();
+        System.out.println(num_decimal);
+        
+        //Double a integer
+        Integer num_entero = Double.valueOf(num).intValue();
+        System.out.println(num_entero);
+
+    }
+}
