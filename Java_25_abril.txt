@@ -1,0 +1,103 @@
+EXPERIENVCIA DE TRABAJO 
+
+import java.util.Scanner;
+
+public class MyProgram extends ConsoleProgram
+{
+    public void run()
+    {
+        Scanner scanner = new Scanner (System.in);
+        System.out.print("Ingresa los años de experiencia laboral: ");
+        
+        Integer numero = scanner.nextInt();
+        
+        if (numero > 0 && numero < 6) {
+            System.out.print("Usted es principiante");
+            }
+        else if(numero > 5 && numero < 11){
+            System.out.print("Usted es intermedio");
+            }
+        else if (numero > 10 && numero < 30){
+            System.out.print("Usted es experto");
+                }
+    }
+}
+
+NUMERO PAR O IMPAR
+
+import java.util.Scanner;
+
+public class MyProgram extends ConsoleProgram
+{
+    public void run()
+    {
+        Scanner scanner = new Scanner (System.in);
+        System.out.print("Ingresar un numero");
+        
+        Integer numero = scanner.nextInt();
+        
+        if (numero %2 == 0) {
+            System.out.print("Es un numero par");
+            }
+        else {
+            System.out.print("El numero no es par");
+            }
+    }
+}
+
+INGRESAR UNA VOCAL
+
+import java.util.Scanner;
+
+public class MyProgram extends ConsoleProgram
+{
+    public void run()
+    {
+        Scanner scanner = new Scanner (System.in);
+        System.out.print("Ingresar una vocal");
+        
+        String palabra = scanner.nextLine();
+        
+        if(palabra.equals("a")) {
+        System.out.print("ardilla");
+        }
+        else if(palabra.equals("e")) {
+        System.out.print("estrella");
+        }
+        else if(palabra.equals("i")) {
+        System.out.print("iglesia");
+        }
+        else if (palabra.equals("o")) {
+        System.out.print("oso");
+        }
+        else if (palabra.equals("u")) {
+        System.out.print("unicornio");
+        }
+        else {
+            System.out.print("no es ninguna");    
+        }
+        
+    }
+}
+
+AÑO BISIESTO
+
+import java.util.Scanner;
+
+public class MyProgram extends ConsoleProgram
+{
+    public void run()
+    {
+        Scanner scanner = new Scanner (System.in);
+        System.out.print("Ingresar una año:");
+        
+        Integer aneo = scanner.nextInt();
+        
+        if( aneo%400==0 || aneo%4==0 && aneo%100!=0) {
+        System.out.print("Es bisiesto");
+        }
+        else {
+        System.out.print("No es bisiesto");
+        }  
+    }
+}
