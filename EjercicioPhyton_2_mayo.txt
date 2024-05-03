@@ -1,0 +1,43 @@
+SUMA DE DOS NÚMEROS
+num1=10
+num2=20
+suma=num1+num2
+
+print(f"la suma es {suma}")
+
+RESTA DE DOS NÚMEROS
+num1=100
+num2=40
+resta=num1-num2
+
+print(f"la resta es {resta}")
+
+MULTIPLICACIÓN DE DOS NÚMEROS
+num1=18
+num2=5
+multiplicacion=num1*num2
+
+print(f"la multiplicacion es {multiplicacion}")
+
+DIVIDIR DOS NÚMEROS
+num1=1010
+num2=5
+division=num1/num2
+
+print(f"la division es {division}")
+
+ELEVAR EL PRIMER NÚMERO A LA POTENCIA DEL SEGUNDO
+num1=5
+num2=2
+potencia=num1**num2
+
+print(f"la potencia del primer numero por el segundo es {potencia}")
+
+ENCONTRAR EL FACTORIAL DE UN NÚMERO
+numero = int(input("Ingrese un numero para encontrar su factorial"))
+fac = 1
+
+for a in range (numero, 0, -1):
+    fac = fac * a
+
+print(f"el factorial de {numero} es: {fac}")
