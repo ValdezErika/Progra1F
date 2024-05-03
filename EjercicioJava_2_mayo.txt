@@ -1,0 +1,68 @@
+import java.util.Scanner;
+
+public class MyProgram extends ConsoleProgram
+{
+    public void run()
+    {
+        Scanner scanner = new Scanner (System.in);
+        
+        int menu = 1;
+        int numero;
+        int multiplo;
+        int op;
+        int ad;
+        int angulo;
+        int pregu;
+        int suma;
+        
+        while(menu != 0)
+        {
+            System.out.print("¿Que desea realizar?\n");
+            System.out.print("1.Los primeros 10 mulriplos de un numero\n");
+            System.out.print("2.Responder\n");
+            System.out.print("3.Encontrar el angulo de un triangulo\n");
+            System.out.print("0.Salir\n");
+            menu = scanner.nextInt();
+            
+            switch(menu){
+                case 1://multiplos
+                System.out.print("Ingrese un numero\n");
+                numero = scanner.nextInt();
+                for(int i = 1; i<11; i++){
+                System.out.println(i);
+                multiplo = numero * i;
+                System.out.println(numero + " x " + i + " = "  + multiplo);
+                }
+                    break;
+                    
+                case 2:
+                System.out.print("Responda: 1.Si 2.No\n");
+                pregu = scanner.nextInt();
+                if(pregu == 1){
+                    System.out.print("Bienvenido\n");
+                    }
+                else if (pregu == 2) {
+                    System.out.print("Adios\n");
+                    }
+                else {
+                    System.out.print("Invalido\n");}
+                    break;
+                    
+                case 3: 
+                System.out.print("Ingrese el angulo opuesto");
+                op = scanner.nextInt();
+                System.out.print("Ingrese el angulo adyacente");
+                ad = scanner.nextInt();
+                if (ad < 0 || ad > 180 || op < 0 || op > 180 || (op + ad >=180)){
+                System.out.print("Valores invalidos");
+                }
+                angulo = 180-(op+ad);
+                System.out.print("El angulo faltante es: " + angulo + " grados\n ");
+                break;
+			
+			default:
+			System.out.print("No hay mas opciones\n");	
+        }
+        }System.out.print("Fin del programa");
+    }
+}
